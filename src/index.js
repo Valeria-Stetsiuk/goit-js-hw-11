@@ -72,21 +72,21 @@ function createImage(arr) {
       return `
       <a class="gallery-link" href="${arr.largeImageURL}">
           <div class="photo-card">
-  <img class="gallery-image" src="${arr.webformatURL}" alt="${arr.tags}" loading="lazy" />
+  <img class="gallery-image" src="${arr.webformatURL}" alt="${arr.tags}" loading="lazy" /> </div>
   <div class="info">
     <p class="info-item">
-      <b>Likes</b>${arr.likes}
+      <b>♥</b>${arr.likes}
     </p>
     <p class="info-item">
-      <b>Views</b>${arr.views}
+      <b>👁‍🗨</b>${arr.views}
     </p>
     <p class="info-item">
-      <b>Comments</b>${arr.comments}
+      <b>💬</b>${arr.comments}
     </p>
     <p class="info-item">
-      <b>Downloads</b>${arr.downloads}
+      <b>🔄</b>${arr.downloads}
     </p>
-  </div>
+ 
 </div></a>`;
     })
     .join('');
