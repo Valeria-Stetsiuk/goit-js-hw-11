@@ -44,10 +44,11 @@ function onSearchForm(evt) {
 
 function onSubmitMore() {
   search
-    .getImage(search.inputSearchQuery)
+    .getImage()
     .then(gallery => {
       const { totalHits, hits } = gallery.data;
       createImage(hits);
+      search.increasePage();
       const { height: cardHeight } = document
         .querySelector('.gallery')
         .firstElementChild.getBoundingClientRect();
