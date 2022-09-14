@@ -104,3 +104,4 @@ function alerTheEnd() {
     'We are sorry, but you have reached the end of search results.'
   );
 }
+
