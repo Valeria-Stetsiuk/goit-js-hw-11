@@ -1,4 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  margin: 0;
+}
 .is-hidden {
   position: absolute;
   width: 1px;
@@ -24,14 +27,11 @@
   top: 0;
   left: 0;
   right: 0;
-  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px 0;
 }
 .search-form {
   display: flex;
-  width: 100%;
-  padding: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
   justify-content: center;
 }
 .search-input {
@@ -48,7 +48,7 @@
   background-color: #fff;
 }
 .gallery {
-  margin: 20px 0 0;
+  margin: 80px 0 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
