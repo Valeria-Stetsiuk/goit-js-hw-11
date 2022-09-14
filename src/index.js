@@ -27,8 +27,8 @@ function onSearchForm(evt) {
   search.setPage();
   search
     .getImage(requery)
-    .then(gallery => {
-      const { totalHits, hits } = gallery.data;
+    .then(answer => {
+      const { totalHits, hits } = answer.data;
       if (!hits.length) {
         throw new Error(alertWrong());
       }
@@ -45,8 +45,8 @@ function onSearchForm(evt) {
 function onSubmitMore() {
   search
     .getImage()
-    .then(gallery => {
-      const { totalHits, hits } = gallery.data;
+    .then(answer => {
+      const { totalHits, hits } = answer.data;
       createImage(hits);
       search.increasePage();
       const { height: cardHeight } = document
@@ -104,4 +104,3 @@ function alerTheEnd() {
     'We are sorry, but you have reached the end of search results.'
   );
 }
-
